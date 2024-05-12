@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: DiscoveryServer
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false # Not registering Eureka with itself to avoid cyclic dependencies.
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+server:
+  port: 8761

@@ -1,0 +1,4 @@
+Annotations:
+    @EnableEurekaServer - this will tell spring that this is a eureka server and enables eureka server auto conf.
+
+open feign: send http requests across microservices
