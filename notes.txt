@@ -2,3 +2,13 @@ Annotations:
     @EnableEurekaServer - this will tell spring that this is a eureka server and enables eureka server auto conf.
 
 open feign: send http requests across microservices
+
+    @FeignClient(name = "student-service", url = "${application.config.students-url}")
+    public interface StudentClient {
+        @GetMapping("/school/{school-id}")
+        List<Student> findAllBySchool(@PathVariable("school-id") Long schoolId);
+    }
+
+
+Eureka - service registry, registers all services.
+All services need to be registered with Eureka to be displayed in the service registry.
