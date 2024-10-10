@@ -12,3 +12,6 @@ open feign: send http requests across microservices
 
 Eureka - service registry, registers all services.
 All services need to be registered with Eureka to be displayed in the service registry.
+
+
+circuit breaker in Studentclient.java
